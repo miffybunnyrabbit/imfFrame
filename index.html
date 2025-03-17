@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMF App</title>
-
-    <!-- Farcaster Frame Metadata -->
-    <meta property="og:title" content="IMF App">
-    <meta property="og:description" content="Crypto’s first credit union. Unlock liquidity from meme coins.">
-    <meta property="og:image" content="https://app.imf.bz/og-image.png">
-
-    <!-- Frame Opens IMF Automatically -->
-    <meta name="fc:frame" content="vNext">
-    <meta name="fc:frame:post_redirect" content="https://app.imf.bz/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMF App Frame</title>
+  
+  <!-- Farcaster Frame Metadata -->
+  <meta property="og:title" content="IMF App">
+  <meta property="og:description" content="Open the IMF App directly in Warpcast.">
+  <meta property="og:image" content="https://app.imf.bz/og-image.png">
+  
+  <!-- Farcaster Frame Config: Automatically redirect to app.imf.bz -->
+  <meta name="fc:frame" content="vNext">
+  <meta name="fc:frame:post_redirect" content="https://app.imf.bz/">
+  
+  <script>
+    // Fallback: Auto-redirect using JavaScript
+    window.onload = function() {
+      window.location.href = "https://app.imf.bz/";
+    };
+  </script>
 </head>
 <body>
-    <h1>IMF Frame</h1>
-    <p>If you're seeing this, open this link inside Warpcast: <a href="https://app.imf.bz/">IMF App</a>.</p>
+  <h1>IMF App Frame</h1>
+  <p>If you are not redirected automatically, please click <a href="https://app.imf.bz/">here</a>.</p>
 </body>
 </html>
